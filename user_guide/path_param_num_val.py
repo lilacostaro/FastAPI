@@ -59,7 +59,7 @@ async def read_items5(
         results.update({'q': q})
     return results
 
-@app.get('/items5/{item_id}')
+@app.get('/items6/{item_id}')
 async def read_items6(
         *, item_id: int = Path(..., title='The ID of the item to get', gt=0, le=1000),
         q: str,
